@@ -1,21 +1,41 @@
 {
-  "source": ["tokens/**/*.json"],
+  "source": [
+    "tokens/global/**/*.json",
+    "tokens/semantic/**/*.json",
+    "tokens/components/**/*.json"
+  ],
   "platforms": {
     "css": {
       "transformGroup": "css",
       "buildPath": "build/css/",
-      "files": [{
-        "destination": "tokens.css",
-        "format": "css/variables"
-      }]
+      "files": [
+        {
+          "destination": "tokens.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
     },
     "js": {
       "transformGroup": "js",
       "buildPath": "build/js/",
-      "files": [{
-        "destination": "tokens.js",
-        "format": "javascript/es6"
-      }]
+      "files": [
+        {
+          "destination": "tokens.js",
+          "format": "javascript/es6"
+        }
+      ]
+    },
+    "json": {
+      "buildPath": "build/json/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "json/nested"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "font": {
+    "family": {
+      "sans": {
+        "value": "Vazirmatn, sans-serif"
+      }
+    },
+    "size": {
+      "small": {
+        "value": "12px"
+      },
+      "medium": {
+        "value": "16px"
+      },
+      "large": {
+        "value": "24px"
+      },
+      "xlarge": {
+        "value": "32px"
+      }
+    },
+    "weight": {
+      "regular": {
+        "value": "400"
+      },
+      "bold": {
+        "value": "700"
+      }
+    }
+  }
+}

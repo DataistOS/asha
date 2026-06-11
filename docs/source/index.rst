@@ -1,21 +1,45 @@
-.. Asha documentation master file, created by
-   sphinx-quickstart on Thu Jun 11 09:54:18 2026.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+سیستم یکپارچه طراحی و مستندسازی آشا
+===================================
 
-Welcome to Asha's documentation!
-================================
+به مرکز دانش طراحی «آشا» خوش آمدید. این مستندات منبِ حقیقت (SSOT) برای تمامی تیم‌های فنی و طراحی است.
 
 .. toctree::
    :maxdepth: 2
-   :caption: محتوا:
+   :caption: مبانی طراحی (Design Principles)
+
+   principles/color
+   principles/typography
+
+.. toctree::
+   :maxdepth: 2
+   :caption: توکن‌های طراحی (Design Tokens)
+
+   tokens/index
+   tokens/colors
+   tokens/colors_auto
+   tokens/typography
+
+.. toctree::
+   :maxdepth: 2
+   :caption: کامپوننت‌ها (Components)
+
+   components/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: راهنماهای فنی (Integration Guides)
+
+   guides/integration
+
+.. toctree::
+   :maxdepth: 2
+   :caption: مستندات تکمیلی
 
    asha
    glossary
 
-Indices and tables
+فهرست‌ها و جداول
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

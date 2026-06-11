@@ -1,0 +1,31 @@
+{
+  "color": {
+    "brand": {
+      "value": "#532E3B"
+    },
+    "green": {
+      "dark": {
+        "value": "#1A3C2B"
+      },
+      "medium": {
+        "value": "#5B7F35"
+      },
+      "light": {
+        "value": "#A9C17E"
+      }
+    },
+    "earth": {
+      "deep": {
+        "value": "#8C2B1D"
+      },
+      "warm": {
+        "value": "#E05A2A"
+      }
+    },
+    "neutral": {
+      "cream": {
+        "value": "#FDF6F0"
+      }
+    }
+  }
+}

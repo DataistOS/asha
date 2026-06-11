@@ -1,0 +1,32 @@
+{
+  "typography": {
+    "h1": {
+      "family": {
+        "value": "{font.family.sans}"
+      },
+      "size": {
+        "value": "{font.size.xlarge}"
+      },
+      "weight": {
+        "value": "{font.weight.bold}"
+      },
+      "line-height": {
+        "value": "1.4"
+      }
+    },
+    "body-base": {
+      "family": {
+        "value": "{font.family.sans}"
+      },
+      "size": {
+        "value": "{font.size.medium}"
+      },
+      "weight": {
+        "value": "{font.weight.regular}"
+      },
+      "line-height": {
+        "value": "1.6"
+      }
+    }
+  }
+}

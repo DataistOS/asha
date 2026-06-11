@@ -1,0 +1,15 @@
+{
+  "color": {
+    "fig": {
+      "dark-900": {
+        "value": "#1A3C2B"
+      },
+      "base-500": {
+        "value": "#5B7F35"
+      },
+      "light-100": {
+        "value": "#A9C17E"
+      }
+    }
+  }
+}

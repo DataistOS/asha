@@ -1,0 +1,22 @@
+{
+  "spacing": {
+    "semantic": {
+      "padding": {
+        "button": {
+          "value": "{spacing.base.sm}"
+        },
+        "container": {
+          "value": "{spacing.base.md}"
+        }
+      },
+      "gap": {
+        "stack": {
+          "value": "{spacing.base.lg}"
+        },
+        "inline": {
+          "value": "{spacing.base.sm}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "semantic": {
+    "color": {
+      "primary": {
+        "value": "{color.fig.base-500}"
+      },
+      "text": {
+        "value": "{color.fig.dark-900}"
+      }
+    }
+  }
+}

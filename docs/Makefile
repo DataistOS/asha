@@ -1,20 +1,25 @@
-# Minimal makefile for Sphinx documentation
-#
-
-# You can set these variables from the command line, and also
-# from the environment for the first two.
+# Variables for Sphinx build
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 
-# Put it first so that "make" without argument is like "make help".
-help:
-	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+.PHONY: help Makefile build-all
 
-.PHONY: help Makefile
-
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+# Standard Sphinx target
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+# Build HTML and EPUB, PDF process is commented out to prevent errors
+build-all:
+	@echo "--- Generating HTML, EPUB, and PDF (PDF currently disabled) ---"
+	rm -rf $(BUILDDIR)/*
+	$(SPHINXBUILD) -b html "$(SOURCEDIR)" "$(BUILDDIR)/html"
+	$(SPHINXBUILD) -b epub "$(SOURCEDIR)" "$(BUILDDIR)/epub"
+	
+	# PDF build process is commented out:
+	# $(SPHINXBUILD) -b latex "$(SOURCEDIR)" "$(BUILDDIR)/latex"
+	# @echo "--- Compiling LaTeX to PDF ---"
+	# cd "$(BUILDDIR)/latex" && xelatex -interaction=nonstopmode *.tex && xelatex -interaction=nonstopmode *.tex
+	
+	@echo "ALL BUILDS COMPLETED SUCCESSFULLY!"

@@ -1,0 +1,35 @@
+# مستندات توکن‌های طراحی (Automated)
+
+| نام توکن (مسیر) | مقدار | پیش‌نمایش |
+| :--- | :--- | :--- |
+| `color.fig.base-500` | `#5B7F35` | <div class="swatch-container"><div class="token-swatch" style="background-color:#5B7F35;"></div></div> |
+| `color.fig.dark-900` | `#1A3C2B` | <div class="swatch-container"><div class="token-swatch" style="background-color:#1A3C2B;"></div></div> |
+| `color.fig.light-100` | `#A9C17E` | <div class="swatch-container"><div class="token-swatch" style="background-color:#A9C17E;"></div></div> |
+| `component.button.bg` | `#5B7F35` | <div class="swatch-container"><div class="token-swatch" style="background-color:#5B7F35;"></div></div> |
+| `font.family.sans` | `Vazirmatn, sans-serif` | <div class="swatch-container"></div> |
+| `font.size.large` | `24px` | <div class="swatch-container"></div> |
+| `font.size.medium` | `16px` | <div class="swatch-container"></div> |
+| `font.size.small` | `12px` | <div class="swatch-container"></div> |
+| `font.size.xlarge` | `32px` | <div class="swatch-container"></div> |
+| `font.weight.bold` | `700` | <div class="swatch-container"></div> |
+| `font.weight.regular` | `400` | <div class="swatch-container"></div> |
+| `semantic.color.primary` | `#5B7F35` | <div class="swatch-container"><div class="token-swatch" style="background-color:#5B7F35;"></div></div> |
+| `semantic.color.text` | `#1A3C2B` | <div class="swatch-container"><div class="token-swatch" style="background-color:#1A3C2B;"></div></div> |
+| `spacing.base.lg` | `24px` | <div class="swatch-container"></div> |
+| `spacing.base.md` | `16px` | <div class="swatch-container"></div> |
+| `spacing.base.sm` | `8px` | <div class="swatch-container"></div> |
+| `spacing.base.xl` | `32px` | <div class="swatch-container"></div> |
+| `spacing.base.xs` | `4px` | <div class="swatch-container"></div> |
+| `spacing.base.xxl` | `48px` | <div class="swatch-container"></div> |
+| `spacing.semantic.gap.inline` | `8px` | <div class="swatch-container"></div> |
+| `spacing.semantic.gap.stack` | `24px` | <div class="swatch-container"></div> |
+| `spacing.semantic.padding.button` | `8px` | <div class="swatch-container"></div> |
+| `spacing.semantic.padding.container` | `16px` | <div class="swatch-container"></div> |
+| `typography.body-base.family` | `Vazirmatn, sans-serif` | <div class="swatch-container"></div> |
+| `typography.body-base.line-height` | `1.6` | <div class="swatch-container"></div> |
+| `typography.body-base.size` | `16px` | <div class="swatch-container"></div> |
+| `typography.body-base.weight` | `400` | <div class="swatch-container"></div> |
+| `typography.h1.family` | `Vazirmatn, sans-serif` | <div class="swatch-container"></div> |
+| `typography.h1.line-height` | `1.4` | <div class="swatch-container"></div> |
+| `typography.h1.size` | `32px` | <div class="swatch-container"></div> |
+| `typography.h1.weight` | `700` | <div class="swatch-container"></div> |

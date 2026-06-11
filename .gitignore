@@ -1,20 +1,43 @@
-# Node/NPM
+# --- Node/NPM ---
+# Dependencies and build artifacts
 node_modules/
 build/
 npm-debug.log
+docs/source/_templates/logs/
+docs/source/_static/tmp.png
+json
 
-# Python/Sphinx
+# --- Python/Sphinx ---
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Virtual environments
 venv/
 .venv/
 env/
 .env
+
+# Sphinx build output and cache
 .pytest_cache/
 docs/build/
+.doctrees/
 
-# OS/Editor
+# --- Project Specific Logs ---
+# Keep only the folder structure, ignore all log files within the templates
+docs/source/_templates/logs/*.txt
+!docs/source/_templates/logs/build.log
+
+# --- OS / Editor ---
 .DS_Store
 .vscode/
 .idea/
+
+# --- Temp files ---
+*.tmp
+*.bak
+*~
+
+# --- System specific ---
+Thumbs.db

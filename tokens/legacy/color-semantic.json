@@ -1,0 +1,22 @@
+{
+  "color": {
+    "semantic": {
+      "action": {
+        "primary": {
+          "value": "{color.green.medium}"
+        },
+        "secondary": {
+          "value": "{color.earth.warm}"
+        }
+      },
+      "surface": {
+        "primary": {
+          "value": "{color.neutral.cream}"
+        },
+        "text": {
+          "value": "{color.brand}"
+        }
+      }
+    }
+  }
+}
