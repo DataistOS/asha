@@ -1,0 +1,20 @@
+# Node/NPM
+node_modules/
+build/
+npm-debug.log
+
+# Python/Sphinx
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+.pytest_cache/
+docs/build/
+
+# OS/Editor
+.DS_Store
+.vscode/
+.idea/
