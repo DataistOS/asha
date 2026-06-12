@@ -3,9 +3,9 @@ import re
 
 # -- Project Information -----------------------------------------------------
 project = 'Asha'
-copyright = '2026, Dataist'
+copyright = '2026-, آزاداندیش داده‌ساز'
 author = 'Dataist'
-release = '0.1.0'
+release = '0.1.1'
 
 # -- General Configuration ---------------------------------------------------
 extensions = [
