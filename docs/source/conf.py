@@ -5,7 +5,7 @@ import re
 project = 'Asha'
 copyright = '2026-, آزاداندیش داده‌ساز'
 author = 'Dataist'
-release = '0.1.1'
+release = '0.1.2'
 
 # -- General Configuration ---------------------------------------------------
 extensions = [
