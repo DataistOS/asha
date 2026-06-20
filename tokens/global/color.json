@@ -1,15 +1,19 @@
 {
   "color": {
     "fig": {
-      "dark-900": {
-        "value": "#1A3C2B"
-      },
-      "base-500": {
-        "value": "#5B7F35"
-      },
-      "light-100": {
-        "value": "#A9C17E"
-      }
+      "dark-900": { "value": "#1A3C2B", "description": "Dark Forest Green" },
+      "base-500": { "value": "#5B7F35", "description": "Olive Green" },
+      "light-100": { "value": "#A9C17E", "description": "Light Sage Green" },
+      "brand-500": { "value": "#532E3B", "description": "Deep Fig Plum" }
+    },
+    "earth": {
+      "plum-500": { "value": "#532E3B", "description": "Deep Fig Plum" },
+      "brown-500": { "value": "#53412E", "description": "Earthy Brown" },
+      "olive-500": { "value": "#46532E", "description": "Muted Olive" },
+      "forest-500": { "value": "#2E5336", "description": "Forest Green" },
+      "slate-500": { "value": "#2E5053", "description": "Dark Slate Teal" },
+      "navy-500": { "value": "#2E3053", "description": "Midnight Navy" },
+      "dark-plum-500": { "value": "#4B2E53", "description": "Deep Purple" }
     }
   }
 }
