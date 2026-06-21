@@ -30,11 +30,15 @@
    :caption: راهنماهای فنی (Integration Guides)
 
    guides/integration
+   
 .. toctree::
    :maxdepth: 2
    :caption: مطالعات بصری (Visual Studies)
 
-   visuals/color_analysis
+   visuals/fig_color
+   visuals/dark_fig_violet
+   visuals/fig_fruit_mauve
+   visuals/fig_mustard_yellow
    
 .. toctree::
    :maxdepth: 2

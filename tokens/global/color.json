@@ -13,7 +13,10 @@
       "forest-500": { "value": "#2E5336", "description": "Forest Green" },
       "slate-500": { "value": "#2E5053", "description": "Dark Slate Teal" },
       "navy-500": { "value": "#2E3053", "description": "Midnight Navy" },
-      "dark-plum-500": { "value": "#4B2E53", "description": "Deep Purple" }
+      "dark-plum-500": { "value": "#4B2E53", "description": "Deep Purple" },
+      "violet-500": { "value": "#573B4C", "description": "Dark Fig Violet" },
+      "mauve-500": { "value": "#A98691", "description": "Fig Fruit Mauve" },
+      "mustard-500": { "value": "#BB8610", "description": "Fig Mustard Yellow" }
     }
   }
 }
