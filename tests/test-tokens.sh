@@ -1,22 +1,38 @@
 #!/bin/bash
 
-# Define the target color
-TARGET_COLOR="#532E3B"
-CSS_FILE="build/css/tokens.css"
+# Usage: ./tests/test-tokens.sh
+# Ensures the design tokens JSON is valid and contains essential values.
 
-echo "Running token integration test..."
+# Configuration
+JSON_FILE="build/json/tokens.json"
+BRAND_COLOR="#532E3B"
+REQUIRED_SIZES=("12px" "16px" "24px" "32px")
 
-# Check if the file exists first
-if [ ! -f "$CSS_FILE" ]; then
-    echo "Error: $CSS_FILE not found. Run the build script first."
+echo "Running comprehensive token integration test..."
+
+# 1. Check if tokens file exists
+if [ ! -f "$JSON_FILE" ]; then
+    echo "Error: $JSON_FILE not found. Run the build script first."
     exit 1
 fi
 
-# Check for the color
-if grep -q "$TARGET_COLOR" "$CSS_FILE"; then
-    echo "Test Passed: $TARGET_COLOR found in $CSS_FILE."
-    exit 0
+# 2. Verify brand color
+if grep -q "$BRAND_COLOR" "$JSON_FILE"; then
+    echo "Test Passed: Brand color found."
 else
-    echo "Test Failed: $TARGET_COLOR not found in $CSS_FILE."
+    echo "Test Failed: Brand color $BRAND_COLOR missing."
     exit 1
 fi
+
+# 3. Verify typography sizes
+for size in "${REQUIRED_SIZES[@]}"; do
+    if grep -q "$size" "$JSON_FILE"; then
+        echo "Test Passed: Size $size found."
+    else
+        echo "Test Failed: Required size $size missing."
+        exit 1
+    fi
+done
+
+echo "All tests passed successfully!"
+exit 0

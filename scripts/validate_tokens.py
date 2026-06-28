@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# Usage: python3 scripts/validate_tokens.py
+# Validates all JSON files in the tokens directory to ensure they contain a 'value' field.
+
 import json
 import os
 import sys
@@ -12,33 +17,36 @@ def validate_tokens(directory):
                 with open(path, 'r') as f:
                     try:
                         data = json.load(f)
-
-                        check_value(data, path, errors)
+                        check_structure(data, path, errors)
                     except json.JSONDecodeError:
-                        errors.append(f"خطای سینتکس در فایل: {path}")
+                        errors.append(f"Syntax error in file: {path}")
     return errors
 
 
-def check_value(obj, path, errors):
+def check_structure(obj, path, errors):
+    """Recursively checks that objects containing tokens have a 'value' field."""
     if isinstance(obj, dict):
-        if "value" in obj:
+        # If this dict looks like a token, it must have a 'value'
+        if "type" in obj or "value" in obj or "category" in obj:
+            if "value" not in obj:
+                errors.append(f"Missing 'value' field in: {path} -> {obj}")
             return
+
+        # Otherwise, keep digging
         for key, value in obj.items():
-            check_value(value, path, errors)
+            check_structure(value, path, errors)
+
     elif isinstance(obj, list):
         for item in obj:
-            check_value(item, path, errors)
-    else:
-
-        if not any(k in ["value"] for k in obj.keys() if isinstance(obj, dict)):
-            return
-        errors.append(f"توکن بدون value در مسیر {path} پیدا شد!")
+            check_structure(item, path, errors)
 
 
 if __name__ == "__main__":
-    errors = validate_tokens("tokens")
-    if errors:
-        for err in errors:
-            print(f"❌ {err}")
+    validation_errors = validate_tokens("tokens")
+
+    if validation_errors:
+        for error in validation_errors:
+            print(f"❌ {error}")
         sys.exit(1)
-    print("✅ تمامی توکن‌ها معتبر هستند.")
+
+    print("✅ All tokens are valid.")
