@@ -5,7 +5,7 @@ import re
 project = 'Asha'
 copyright = '2026-, آزاداندیش داده‌ساز'
 author = 'Dataist'
-release = '0.1.7'
+release = '0.1.8'
 
 # -- General Configuration ---------------------------------------------------
 extensions = [
@@ -61,11 +61,9 @@ latex_elements = {
     ''',
 }
 
-
 # -- Dynamic Stats Engine -----------------------------------------------------
 def update_download_page_stats():
     pass
-
 
 # -- Search & Markdown Optimization -------------------------------------------
 myst_enable_extensions = [
