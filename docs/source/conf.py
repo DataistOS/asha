@@ -2,10 +2,26 @@ import os
 import re
 
 # -- Project Information -----------------------------------------------------
+
+# Dynamic version read from project root
+# Using '..' to go up to the root folder from 'docs/source/'
+current_dir = os.path.dirname(os.path.abspath(__file__))
+version_file = os.path.abspath(os.path.join(current_dir, '..', '..', 'VERSION'))
+
+try:
+    with open(version_file, 'r') as f:
+        content = f.read().strip()
+        if 'echo "' in content:
+            release = content.split('"')[1]
+        else:
+            release = content
+except Exception:
+    release = '0.0.1'
+
 project = 'Asha'
 copyright = '2026-, آزاداندیش داده‌ساز'
 author = 'Dataist'
-release = '0.1.8'
+version = release
 
 # -- General Configuration ---------------------------------------------------
 extensions = [

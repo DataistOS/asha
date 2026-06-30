@@ -1,0 +1,25 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create ZIP
+        run: |
+          zip -r asha-${{ github.ref_name }}.zip . \
+          -x "*.git*" "docs/_build/*" "tests/*" "node_modules/*" ".github/*"
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: asha-*.zip
+          body_path: CHANGELOG.md
+          draft: false
+          prerelease: false
