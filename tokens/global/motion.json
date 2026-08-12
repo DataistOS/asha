@@ -1,0 +1,24 @@
+{
+  "motion": {
+    "duration": {
+      "fast": {
+        "value": "150ms",
+        "description": "Fast transition for hover or state change"
+      },
+      "normal": {
+        "value": "250ms",
+        "description": "Standard transition for modals or menus"
+      },
+      "slow": {
+        "value": "400ms",
+        "description": "Slow transition for large layout shifts"
+      }
+    },
+    "easing": {
+      "default": {
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "description": "Standard smooth easing"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "interaction": {
+    "opacity": {
+      "hover": {
+        "value": "0.8",
+        "description": "Opacity level on element hover"
+      },
+      "disabled": {
+        "value": "0.4",
+        "description": "Opacity level for disabled elements"
+      }
+    }
+  }
+}

@@ -9,6 +9,11 @@
 
    principles/color
    principles/typography
+   principles/interactivity
+   principles/motion
+   principles/touch
+   principles/accessibility
+   principles/optimizations
 
 .. toctree::
    :maxdepth: 2
@@ -30,7 +35,7 @@
    :caption: راهنماهای فنی (Integration Guides)
 
    guides/integration
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: مطالعات بصری (Visual Studies)
@@ -39,7 +44,7 @@
    visuals/dark_fig_violet
    visuals/fig_fruit_mauve
    visuals/fig_mustard_yellow
-   
+
 .. toctree::
    :maxdepth: 2
    :caption: مستندات تکمیلی

@@ -1,5 +1,9 @@
 import 'dart:ui';
 
+class InteractionTokens {
+  const InteractionTokens();
+}
+
 class TypographyTokens {
   const TypographyTokens();
 }
@@ -14,6 +18,10 @@ class ColorTokens {
   final base500 = const Color(0xFF5B7F35);
   final light100 = const Color(0xFFA9C17E);
   final brand500 = const Color(0xFF532E3B);
+}
+
+class MotionTokens {
+  const MotionTokens();
 }
 
 import 'package:flutter/material.dart';
@@ -32,9 +40,11 @@ class Spacing_semanticTokens {
 }
 
 class Asha {
+  static const interaction = InteractionTokens();
   static const typography = TypographyTokens();
   static const spacing = SpacingTokens();
   static const color = ColorTokens();
+  static const motion = MotionTokens();
   static const typography_semantic = Typography_semanticTokens();
   static const color_light = Color_lightTokens();
   static const spacing_semantic = Spacing_semanticTokens();
